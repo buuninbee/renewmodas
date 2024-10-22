@@ -9,7 +9,8 @@ module.exports = {
       onSegundary: '#19281F',
       primaryContainer: '#B8F397',
       segundaryContainer: '#042100',
-      onSurface: '#49454e' 
+      onSurface: '#49454e',
+      surfaceContainerHigh: '#99aba3'
     },
     backgroundImage: {
       card1: "url('/assets/card-1.png')",

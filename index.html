@@ -14,31 +14,41 @@
 
 <body class="">
     <header class=" bg-segundaryContainer w-full">
-        <nav class="flex justify-between items-center py-3.5 px-7 ">
+        <nav class="flex justify-between items-center py-3.5 px-7 lg:px-11 lg:py-5">
             <div>
                 <a href="./">
                     <img src="./assets/logo.svg" alt="logo da renew modas">
                 </a>
             </div>
 
-            <div>
-                <ol class="flex gap-2 items-center">
-                    <li> <a href="">
-                            <img src="./assets/sacola-de-compra.svg" alt="Botão de sacola">
-                        </a>
-                    </li>
-                    <li> <a href="">
-                            <img src="./assets/menu-open.svg" alt="botão pra abrir o menu">
-                        </a>
-                    </li>
-                </ol>
+            <div class="flex gap-2 items-center lg:gap-14">
+                <div class="">
+                    <ul class="hidden lg:flex gap-2 text-surfaceContainerHigh font-sans text-xl">
+                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a href="quem-somos.html">Quem
+                                somos</a></li>
+                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
+                                href="ultima-colecao.html">Coleção
+                                de 2024</a></li>
+                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
+                                href="https://www.instagram.com/nike/">Instagram</a></li>
+                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="relative mr-3 ">
+                    <span
+                        class="text-onPrimary bg-primary rounded-full px-[6px] text-[10px] absolute left-4 bottom-4">0</span>
+                    <a href=""> <img src="./assets/sacola-de-compra.svg" class="w-6 h-6" alt="Botão de sacola"></a>
+                </div>
+                <div id="menu-open" class="lg:hidden">
+                    <a href=""><img src="./assets/menu-open.svg" alt="botão pra abrir o menu"></a>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class=" mb-8">
-        <section class="mb-6">
-            <ul class="flex overflow-x-auto snap-x snap-mandatory sm:h-96 lg:h-[420px]">
+        <section class="mb-6 sm:mb-14">
+            <ul class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none sm:h-96 lg:h-[620px]">
                 <li
                     class="flex flex-col justify-end gap-2 px-6 bg-slate-400 text-onPrimary bg-card1 w-full h-[240px] bg-cover bg-center pb-4 shrink-0 snap-center sm:h-auto sm:pb-10">
                     <h2 class="text-3xl font-serif sm:text-5xl lg:text-7xl">Produção artesanal</h2>
@@ -73,13 +83,13 @@
             </ul>
         </section>
 
-        <section class="px-6 mb-9">
-            <h1 class="font-serif text-3xl text-onPrimary pb-4">Ultima coleção</h1>
+        <section class="px-6 mb-9 sm:mb-14">
+            <h1 class="font-serif text-3xl text-onPrimary pb-4 sm:text-5xl sm:pb-6">Ultima coleção</h1>
 
-            <ul class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory">
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:">
+            <ul class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory scrollbar-none">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:min-w-80">
                     <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-1.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/camisa-1.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                     <div class="px-3 pb-6">
                         <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
@@ -89,9 +99,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:min-w-80">
                     <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-2.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/camisa-2.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                     <div class="px-3 pb-6">
                         <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
@@ -101,9 +111,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:min-w-80">
                     <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-3.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/camisa-3.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                     <div class="px-3 pb-6">
                         <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
@@ -113,9 +123,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:min-w-80">
                     <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-4.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/camisa-4.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                     <div class="px-3 pb-6">
                         <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
@@ -125,9 +135,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:min-w-80">
                     <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-5.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/camisa-5.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                     <div class="px-3 pb-6">
                         <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
@@ -137,9 +147,9 @@
                         </div>
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center sm:min-w-80">
                     <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-6.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/camisa-6.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                     <div class="px-3 pb-6">
                         <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
@@ -151,33 +161,49 @@
                 </li>
             </ul>
 
-            <p class=" text-sm text-onPrimary underline underline-offset-4 font-sans text-right">Mostrar mais</p>
+            <p class=" text-sm text-onPrimary underline underline-offset-4 font-sans text-right sm:text-xl">Mostrar
+                mais</p>
         </section>
 
-        <section class="px-6 mb-9">
-            <h2 class=" text-onPrimary font-serif text-3xl pb-3">
+        <section class="px-6 mb-9 sm:mb-14 lg:px-96 ">
+            <h2 class=" text-onPrimary font-serif text-3xl pb-3 sm:text-6xl lg:text-8xl">
                 “Na natureza nada se cria, nada se perde, tudo se transforma”.
             </h2>
-            <p class="text-sm text-onPrimary text-right">- Laurent Lavoisier</p>
+            <p class="text-sm text-onPrimary text-right sm:text-xl">- Laurent Lavoisier </p>
         </section>
 
-        <section class="px-6">
-            <h2 class="font-serif text-3xl text-onPrimary pb-4">FeedBacks</h2>
+        <section class="px-6 sm:mb-14">
+            <h2 class="font-serif text-3xl text-onPrimary pb-4 sm:text-5xl sm:pb-6">FeedBacks</h2>
 
-            <ul class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory">
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+            <ul class="flex gap-3 pb-2 overflow-x-auto snap-x scrollbar-none snap-mandatory">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center md:min-w-80">
                     <div class="flex justify-center max-w-full pb-3 rounded-2xl">
-                        <img src="./assets/feedback.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/feedback.png" class="md:w-full" alt="camisa do deadpool preta" srcset="">
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center md:min-w-80">
                     <div class="flex justify-center max-w-full pb-3 rounded-2xl">
-                        <img src="./assets/feedback.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/feedback.png" class="md:w-full"" alt=" camisa do deadpool preta" srcset="">
                     </div>
                 </li>
-                <li class="bg-onPrimary rounded-md min-w-60 snap-center">
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center md:min-w-80">
                     <div class="flex justify-center max-w-full pb-3 rounded-2xl">
-                        <img src="./assets/feedback.png" class="" alt="camisa do deadpool preta" srcset="">
+                        <img src="./assets/feedback.png" class="md:w-full"" alt=" camisa do deadpool preta" srcset="">
+                    </div>
+                </li>
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center md:min-w-80">
+                    <div class="flex justify-center max-w-full pb-3 rounded-2xl">
+                        <img src="./assets/feedback.png" class="md:w-full"" alt=" camisa do deadpool preta" srcset="">
+                    </div>
+                </li>
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center md:min-w-80">
+                    <div class="flex justify-center max-w-full pb-3 rounded-2xl">
+                        <img src="./assets/feedback.png" class="md:w-full"" alt=" camisa do deadpool preta" srcset="">
+                    </div>
+                </li>
+                <li class="bg-onPrimary rounded-md min-w-60 snap-center md:min-w-80">
+                    <div class="flex justify-center max-w-full pb-3 rounded-2xl">
+                        <img src="./assets/feedback.png" class="md:w-full"" alt=" camisa do deadpool preta" srcset="">
                     </div>
                 </li>
             </ul>
@@ -185,19 +211,24 @@
     </main>
 
     <footer class="bg-segundaryContainer py-6 px-7 text-onPrimary">
-        <h2 class="font-serif text-3xl text-primaryContainer mt-4 mb-4">Escolha o verde, vista o futuro 🌱</h2>
+        <h2 class="font-serif text-3xl text-primaryContainer mt-4 mb-4 sm:text-5xl sm:mb-8 md:text-7xl md:mt-7">Escolha
+            o
+            verde,
+            vista o
+            futuro 🌱
+        </h2>
 
-        <div class=" flex flex-col gap-4">
+        <div class=" flex flex-col gap-4 sm:gap-6">
             <div class="">
-                <h3 class="font-sans font-medium text-2xl ">Contato</h3>
-                <a href="tel:+5561999998888" class="text-lg">+55 61 99999-8888</a>
+                <h3 class="font-sans font-medium text-2xl sm:text-3xl">Contato</h3>
+                <a href="tel:+5561999998888" class="text-lg sm:text-xl">+55 61 99999-8888</a>
             </div>
 
             <div>
-                <h3 class="font-sans font-medium  text-2xl">Redes socias</h3>
+                <h3 class="font-sans font-medium text-2xl sm:text-3xl">Redes socias</h3>
                 <div class="flex flex-col text-lg">
-                    <a href="#" class="font-sans">Instagram</a>
-                    <a href="#" class="font-sans">WhatsApp</a>
+                    <a href="#" class="font-sans text-lg sm:text-xl">Instagram</a>
+                    <a href="#" class="font-sans text-lg sm:text-xl">WhatsApp</a>
                 </div>
             </div>
         </div>
