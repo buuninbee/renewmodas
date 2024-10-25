@@ -8,6 +8,10 @@ const prevBtnCards = document.getElementById('prevBtnCards');
 const nextBtnCards = document.getElementById('nextBtnCards');
 let currentIndexCard = 0;
 
+const carouselFeedBacks = document.getElementById('carroselFeedBacks');
+const prevBtnFeedBacks = document.getElementById('prevBtnFeedBacks');
+const nextBtnFeedBacks = document.getElementById('nextBtnFeedBacks');
+let currentIndexFeedBacks = 0;
 
 
 nextBtn.addEventListener('click', () => {
@@ -65,4 +69,34 @@ prevBtnCards.addEventListener('click', () => {
         left: width * currentIndexCard,
         behavior: 'smooth',
     });
+});
+
+nextBtnFeedBacks.addEventListener('click', () => {
+    const items = document.querySelectorAll('.carouselFeedBacks');
+    if (currentIndexFeedBacks < items.length -1) {
+        currentIndexFeedBacks++;
+    } else {
+        currentIndexFeedBacks = 0; // Reinicia no primeiro card
+    }
+    const width = items[currentIndexFeedBacks].offsetWidth;
+    carouselFeedBacks.scrollTo({
+        left: width * currentIndexFeedBacks,
+        behavior: 'smooth',
+    });
+    console.log(carouselFeedBacks)
+});
+
+prevBtnFeedBacks.addEventListener('click', () => {
+    const items = document.querySelectorAll('.carouselFeedBacks');
+    if (currentIndexFeedBacks > 0) {
+        currentIndexFeedBacks--;
+    } else {
+        currentIndexFeedBacks = items.length -1; // Volta ao último card
+    }
+    const width = items[currentIndexFeedBacks].offsetWidth;
+    carouselFeedBacks.scrollTo({
+        left: width * currentIndexFeedBacks,
+        behavior: 'smooth',
+    });
+    console.log("pegou")
 });
