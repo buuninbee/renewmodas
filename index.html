@@ -15,35 +15,54 @@
 
 <body class="scroll-smooth">
     <header class=" bg-segundaryContainer w-full">
-        <nav class="flex justify-between items-center py-3.5 px-7 lg:px-11 lg:py-5">
-            <div>
-                <a href="./">
-                    <img src="./assets/logo.svg" alt="logo da renew modas">
-                </a>
-            </div>
-
-            <div class="flex gap-2 items-center lg:gap-14">
+        <nav class=" ">
+            <div id="navG" class="flex justify-between items-center relative py-3.5 px-7 lg:px-11 lg:py-5">
                 <div class="">
-                    <ul class="hidden lg:flex gap-2 text-surfaceContainerHigh font-sans text-xl">
-                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a href="quem-somos.html">Quem
-                                somos</a></li>
-                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
-                                href="ultima-colecao.html">Coleção
-                                de 2024</a></li>
-                        <span>|</span>
-                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
-                                href="https://www.instagram.com/nike/"> Instagram</a></li>
-                        <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a href="#">WhatsApp</a></li>
-                    </ul>
+                    <a href="./index.html">
+                        <img src="./assets/logo.svg" alt="logo da renew modas">
+                    </a>
                 </div>
-                <div class="relative mr-3 ">
-                    <span
-                        class="text-onPrimary bg-primary rounded-full px-[6px] text-[10px] absolute left-4 bottom-4">0</span>
-                    <a href=""> <img src="./assets/sacola-de-compra.svg" class="w-6 h-6" alt="Botão de sacola"></a>
+
+                <div class="flex gap-2 items-center lg:gap-14 ">
+                    <div class="">
+                        <ul class="hidden lg:flex gap-2 text-surfaceContainerHigh font-sans text-xl">
+                            <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
+                                    href="quem-somos.html">Quem
+                                    somos</a></li>
+                            <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
+                                    href="ultima-colecao.html">Coleção
+                                    de 2024</a></li>
+                            <span>|</span>
+                            <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
+                                    href="https://www.instagram.com/nike/"> Instagram</a></li>
+                            <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a href="#">WhatsApp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative mr-3">
+                        <span
+                            class="text-onPrimary bg-primary rounded-full px-[6px] text-[10px] absolute left-4 bottom-4">0</span>
+                        <a href=""> <img src="./assets/sacola-de-compra.svg" class="w-6 h-6" alt="Botão de sacola"></a>
+                    </div>
+                    <button id="btnMenuOpen" class=" lg:hidden">
+                        <a href=""><img src="./assets/menu-open.svg" alt="botão pra abrir o menu"></a>
+                    </button>
                 </div>
-                <div id="menu-open" class="lg:hidden">
-                    <a href=""><img src="./assets/menu-open.svg" alt="botão pra abrir o menu"></a>
+            </div>
+            <div id="navP" class="hidden bg-segundaryContainer w-screen h-screen px-7 pt-3 top-0 left-0 fixed z-50">
+                <div class="pt-6 justify-self-end items-center">
+                    <button id="btnMenuClose" class="p-3">
+                        <img class="w-6" src="./assets/menu-close.svg" alt="botão pra abrir o menu">
+                    </button>
                 </div>
+                <ol class="text-onPrimary text-2xl w-full h-screen pt-6 flex flex-col gap-4">
+                    <li class=""><a href="quem-somos.html">Quem
+                            somos</a></li>
+                    <li class=" "><a href="ultima-colecao.html">Coleção
+                            de 2024</a></li>
+                    <li class=" "><a href="https://www.instagram.com/nike/"> Instagram</a></li>
+                    <li class=" "><a href="#">WhatsApp</a></li>
+                </ol>
             </div>
         </nav>
     </header>
@@ -100,7 +119,7 @@
             <h1 class="font-serif text-3xl text-onPrimary pb-4 sm:text-5xl sm:pb-6">Ultima coleção</h1>
 
             <ul id="carrosselCards"
-                class="flex gap-3 pb-2 overflow-x-auto will-change-scroll snap-x snap-mandatory scrollbar-none md:hover:snap-x">
+                class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory scrollbar-none md:hover:snap-x">
                 <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
                     <a class="" href="./camisa1.html">
                         <div lass="flex justify-center max-w-full pb-3">

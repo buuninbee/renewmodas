@@ -100,3 +100,43 @@ prevBtnFeedBacks.addEventListener('click', () => {
     });
     console.log("pegou")
 });
+
+
+// animação do menu
+
+const menuOpen = document.getElementById("btnMenuOpen")
+const menuClose = document.getElementById("btnMenuClose")
+
+
+const navG = document.getElementById("navG")
+const navP = document.getElementById("navP")
+
+const tets1 = document.getElementById("test1")
+const tets2 = document.getElementById("test2")
+
+
+
+menuOpen.addEventListener("click", (e) =>{
+    e.preventDefault()
+    if (navG.classList.contains("flex")) {
+        navG.classList.add("hidden")
+        navP.classList.remove("hidden")
+        navP.classList.add("grid")
+    } else{
+        navG.classList.add("flex")
+    }
+})
+
+menuClose.addEventListener("click", () =>{
+    // e.preventDefault()
+    if (navP.classList.contains("grid")) {
+        navG.classList.remove("hidden")
+        navG.classList.add("flex")
+        navP.classList.remove("grid")
+        navP.classList.add("hidden")
+    } else{
+        navP.classList.add("grid")
+    }
+
+    
+})

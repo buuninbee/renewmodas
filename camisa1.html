@@ -1,97 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel de Cards com Botões</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .carousel {
-            display: flex;
-            overflow-x: hidden;
-            /* Esconde os cards fora de visão */
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-        }
-
-        .carousel-item {
-            min-width: 100%;
-            /* Cada card ocupa 100% da largura da tela */
-            scroll-snap-align: center;
-        }
-    </style>
+    <title>Menu Hambúrguer Animado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
 
-    <!-- Carrossel de Cards -->
-    <div class="relative w-full max-w-4xl mx-auto">
-        <!-- Carrossel -->
-        <div id="carousel" class="carousel">
-            <div class="carousel-item bg-blue-500 text-white p-8 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold">Card 1</h2>
-                <p>Conteúdo do Card 1</p>
-            </div>
-            <div class="carousel-item bg-green-500 text-white p-8 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold">Card 2</h2>
-                <p>Conteúdo do Card 2</p>
-            </div>
-            <div class="carousel-item bg-red-500 text-white p-8 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold">Card 3</h2>
-                <p>Conteúdo do Card 3</p>
-            </div>
-            <div class="carousel-item bg-yellow-500 text-white p-8 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold">Card 4</h2>
-                <p>Conteúdo do Card 4</p>
-            </div>
-        </div>
+    <!-- Botão do Menu Hambúrguer -->
+    <button id="menuButton" class="p-4 bg-blue-500 text-white rounded-md">
+        Menu
+    </button>
 
-        <!-- Botão de Anterior -->
-        <button id="prevBtn"
-            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-4 rounded-full">
-            < </button>
+    <!-- Menu com Animação -->
+    <nav id="menu"
+        class="transition-all duration-300 transform scale-y-0 opacity-0 origin-top bg-white shadow-lg rounded-md p-6 w-48 absolute top-20 right-4">
+        <ul>
+            <li><a href="#" class="block py-2 text-gray-700">Home</a></li>
+            <li><a href="#" class="block py-2 text-gray-700">Sobre</a></li>
+            <li><a href="#" class="block py-2 text-gray-700">Serviços</a></li>
+            <li><a href="#" class="block py-2 text-gray-700">Contato</a></li>
+        </ul>
+    </nav>
 
-                <!-- Botão de Próximo -->
-                <button id="nextBtn"
-                    class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-4 rounded-full">
-                    > </button>
-    </div>
-
+    <!-- JavaScript -->
     <script>
-        const carousel = document.getElementById('carousel');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        let currentIndex = 0;
+        const menuButton = document.getElementById('menuButton');
+        const menu = document.getElementById('menu');
 
-        // Função para ir para o próximo card
-        nextBtn.addEventListener('click', () => {
-            const items = document.querySelectorAll('.carousel-item');
-            if (currentIndex < items.length - 1) {
-                currentIndex++;
+        menuButton.addEventListener('click', () => {
+            if (menu.classList.contains('scale-y-0')) {
+                menu.classList.remove('scale-y-0', 'opacity-0');
+                menu.classList.add('scale-y-100', 'opacity-100');
             } else {
-                currentIndex = 0; // Reinicia no primeiro card
+                menu.classList.remove('scale-y-100', 'opacity-100');
+                menu.classList.add('scale-y-0', 'opacity-0');
             }
-            const width = items[currentIndex].offsetWidth;
-            carousel.scrollTo({
-                left: width * currentIndex,
-                behavior: 'smooth',
-            });
-        });
-
-        // Função para voltar ao card anterior
-        prevBtn.addEventListener('click', () => {
-            const items = document.querySelectorAll('.carousel-item');
-            if (currentIndex > 0) {
-                currentIndex--;
-            } else {
-                currentIndex = items.length - 1; // Volta ao último card
-            }
-            const width = items[currentIndex].offsetWidth;
-            carousel.scrollTo({
-                left: width * currentIndex,
-                behavior: 'smooth',
-            });
         });
     </script>
 
