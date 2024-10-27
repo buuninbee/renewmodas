@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Ativo</title>
+    <style>
+        /* Classe de estilo para o botão ativo */
+        .active {
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="buttonGroup">
+        <button class="toggle-btn">Botão 1</button>
+        <button class="toggle-btn">Botão 2</button>
+        <button class="toggle-btn">Botão 3</button>
+        <button class="toggle-btn">Botão 4</button>
+    </div>
+
+    <script>
+        // Seleciona todos os botões com a classe .toggle-btn
+        const buttons = document.querySelectorAll(".toggle-btn");
+
+        // Adiciona um evento de clique em cada botão
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                // Remove a classe 'active' de todos os botões
+                buttons.forEach(btn => btn.classList.remove("active"));
+
+                // Adiciona a classe 'active' ao botão clicado
+                button.classList.add("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -13,6 +13,12 @@ const prevBtnFeedBacks = document.getElementById('prevBtnFeedBacks');
 const nextBtnFeedBacks = document.getElementById('nextBtnFeedBacks');
 let currentIndexFeedBacks = 0;
 
+const navG = document.getElementById("navG")
+const navP = document.getElementById("navP")
+
+const botaos = document.querySelectorAll(".toggle-btn");
+
+
 
 nextBtn.addEventListener('click', () => {
     const items = document.querySelectorAll('.carousel-item');
@@ -104,20 +110,8 @@ prevBtnFeedBacks.addEventListener('click', () => {
 
 // animação do menu
 
-const menuOpen = document.getElementById("btnMenuOpen")
-const menuClose = document.getElementById("btnMenuClose")
 
-
-const navG = document.getElementById("navG")
-const navP = document.getElementById("navP")
-
-const tets1 = document.getElementById("test1")
-const tets2 = document.getElementById("test2")
-
-
-
-menuOpen.addEventListener("click", (e) =>{
-    e.preventDefault()
+function menuOpen() {
     if (navG.classList.contains("flex")) {
         navG.classList.add("hidden")
         navP.classList.remove("hidden")
@@ -125,10 +119,9 @@ menuOpen.addEventListener("click", (e) =>{
     } else{
         navG.classList.add("flex")
     }
-})
+}
 
-menuClose.addEventListener("click", () =>{
-    // e.preventDefault()
+function menuClose() {
     if (navP.classList.contains("grid")) {
         navG.classList.remove("hidden")
         navG.classList.add("flex")
@@ -137,6 +130,18 @@ menuClose.addEventListener("click", () =>{
     } else{
         navP.classList.add("grid")
     }
+}
 
-    
-})
+
+
+
+// Adiciona um evento de clique em cada botão
+botaos.forEach(button => {
+    button.addEventListener("click", function () {
+        buttons.forEach(btn => btn.classList.remove("border-segundaryContainer", "text-segundaryContainer"));
+
+        // Adiciona a classe 'active' ao botão clicado
+        button.classList.add("border-primary", "bg-primary", "text-onPrimary");
+    });
+
+});

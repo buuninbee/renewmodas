@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&family=Rufina&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/output.css">
-    <script src="./js/main.js" defer></script>
     <title>ReneW Moda | Camisa</title>
 </head>
 
@@ -30,7 +29,7 @@
                                     href="quem-somos.html">Quem
                                     somos</a></li>
                             <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
-                                    href="ultima-colecao.html">Coleção
+                                    href="colecao.html">Coleção
                                     de 2024</a></li>
                             <span>|</span>
                             <li class="hover:text-onPrimary hover:ease-in-out duration-300"><a
@@ -42,23 +41,24 @@
                     <div class="relative mr-3">
                         <span id="cart-count"
                             class="text-onPrimary bg-primary rounded-full px-[6px] text-[10px] absolute left-4 bottom-4">0</span>
-                        <a href=""> <img src="./assets/sacola-de-compra.svg" class="w-6 h-6" alt="Botão de sacola"></a>
+                        <a href="./carrinho.html"> <img src="./assets/sacola-de-compra.svg" class="w-6 h-6"
+                                alt="Botão de sacola"></a>
                     </div>
-                    <button id="btnMenuOpen" class=" lg:hidden">
-                        <a href=""><img src="./assets/menu-open.svg" alt="botão pra abrir o menu"></a>
+                    <button id="" onclick="menuOpen()" class=" lg:hidden">
+                        <img src="./assets/menu-open.svg" alt="botão pra abrir o menu">
                     </button>
                 </div>
             </div>
             <div id="navP" class="hidden bg-segundaryContainer w-screen h-screen px-7 pt-3 top-0 left-0 fixed z-50">
                 <div class="pt-6 justify-self-end items-center">
-                    <button id="btnMenuClose" class="p-3">
+                    <button id="" onclick="menuClose()" class="btnMenuClose p-3">
                         <img class="w-6" src="./assets/menu-close.svg" alt="botão pra abrir o menu">
                     </button>
                 </div>
                 <ol class="text-onPrimary text-2xl w-full h-screen pt-6 flex flex-col gap-4">
                     <li class=""><a href="quem-somos.html">Quem
                             somos</a></li>
-                    <li class=" "><a href="ultima-colecao.html">Coleção
+                    <li class=" "><a href="./colecao.html">Coleção
                             de 2024</a></li>
                     <li class=" "><a href="https://www.instagram.com/nike/"> Instagram</a></li>
                     <li class=" "><a href="#">WhatsApp</a></li>
@@ -66,310 +66,316 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section>
+            <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none sm:h-96 lg:h-[620px] bg-fixed">
+                <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
+                    <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw34c5529e/L1212_LDM_20.jpg?imwidth=615&impolicy=pctp"
+                        alt="" srcset="">
+                </div>
+                <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
+                    <img class=""
+                        src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw811603c0/L1212_LDM_L1.jpg?imwidth=615&impolicy=pctp"
+                        alt="" srcset="">
+                </div>
+                <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
+                    <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwb10f2a19/L1212_LDM_23.jpg?imwidth=765&impolicy=pctp"
+                        alt="" srcset="">
+                </div>
+                <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
+                    <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwa14c8ebf/L1212_LDM_21.jpg?imwidth=615&impolicy=pctp"
+                        alt="" srcset="">
+                </div>
+                <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
+                    <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw96a74ac6/L1212_LDM_22.jpg?imwidth=615&impolicy=pctp"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-8 relative mb-12">
+            <div
+                class="flex px-4 flex-col justify-center before:left-[40%] before:text-center before:absolute before:w-20 before:h-[3px] before:top-4 before:bg-segundaryContainer ">
+                <h2 class="text-onPrimary font-sans text-3xl font-bold pb-3">Camiseta RenewWModa</h2>
+
+                <div class="justify-items-start mb-6">
+                    <span class="line-through text-surfaceContainerHigh text-xl">R$ 92,00</span>
+                    <h3 class="font-sans text-onPrimary text-2xl">R$ 80,00</h3>
+                </div>
+
+                <div class="flex flex-col mb-4">
+                    <h3 class="text-onPrimary text-2xl mb-2">Tamanho</h3>
+
+                    <div class="flex gap-3">
+                        <button
+                            class="toggle-btn py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer">PP</button>
+                        <button
+                            class="toggle-btn py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer">P</button>
+                        <button
+                            class="toggle-btn py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer">M</button>
+                        <button
+                            class="toggle-btn py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer">G</button>
+
+                    </div>
+                </div>
+
+                <div class="flex gap-3 bg-segundaryContainer mb-6 text-primaryContainer py-2 px-3 rounded-md">
+                    <div class="justify-items-end min-w-9 ">
+                        <img class="w-6 h-auto" src="./assets/aviso.svg" alt="">
+                    </div>
+                    <p>Todas as nossas compras são finalizadas através do nosso WhatsApp, proporcionando uma proximidade
+                        única com nossos clientes desde o início até a conclusão da compra.</p>
+                </div>
+
+                <a class="group mb-6 relative justify-center inline-flex items-center overflow-hidden rounded bg-primary px-8 py-3 text-onPrimary focus:outline-none focus:ring active:bg-indigo-500"
+                    href="./carrinho.html">
+                    <span class="absolute -end-full transition-all group-hover:end-4">
+                        <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </span>
+
+                    <span class="text-sm font-medium transition-all group-hover:me-4"> Adicionar ao carrinho </span>
+                </a>
+
+                <div class="flow-root">
+                    <div class="-my-1 divide-y divide-">
+                        <details class="group py-2 [&_summary::-webkit-details-marker]:hidden" open>
+                            <summary class="flex cursor-pointer items-center justify-between text-gray-900">
+                                <h2 class="text-lg font-medium text-onPrimary">Detalhes dos produto</h2>
+
+                                <span class="relative size-5 shrink-0">
+                                    <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="#fff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+
+                            <p class="mt-4 leading-relaxed text-onPrimary">
+                                Produzida a partir de materiais 100% recicláveis, incluindo poliéster reciclado e
+                                algodão reciclado. Confortável, durável e suave ao toque, perfeito para o uso diário,
+                                mantendo o planeta em mente.
+
+                                Material: Mistura de poliéster reciclado e algodão reciclado.
+
+                                Sustentabilidade: Reduz o consumo de água e energia, com menor pegada de carbono.
+
+                                Estilo: Disponível em cores modernas e corte versátil, ideal para looks casuais e
+                                despojados.
+
+                                Benefício ambiental: Cada peça contribui para a redução do desperdício têxtil e o
+                                reaproveitamento de resíduos plásticos.
+
+                                Vista-se com propósito e ajude a cuidar do planeta, sem abrir mão do conforto e da
+                                qualidade!
+                            </p>
+                        </details>
+
+                        <details class="group py-2 [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-onPrimary">
+                                <h2 class="text-lg font-medium ">Dimensões Aproximadas</h2>
+
+                                <span class="relative size-5 shrink-0">
+                                    <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="#fff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+
+                            <p class="mt-4 leading-relaxedflex text-onPrimary flex-col gap-1">
+                                <span>
+                                    P: 69-69 x 49-51 cm (LxA). Recomendado para 162-170 de altura. (51kg - 62kg)
+                                </span>
+
+                                <span>
+                                    M: 69-71 x 51-53 cm (LxA). Recomendado para 170-176 de altura. (62kg - 78kg)
+                                </span>
+
+                                <span>
+
+                                    G: 71-73 x 53-55 cm (LxA). Recomendado para 176-182 de altura. (78kg - 83kg)
+                                </span>
+
+                                <span>
+                                    GG: 73-75 x 55-57 cm (LxA). Recomendado para 182-190 de altura. (83kg - 90kg)
+                                </span>
+
+                                <span>
+                                    As medidas apresentadas aqui podem oscilar em até 1,5 cm em sua largura e no seu
+                                    comprimento.
+                                </span>
+                            </p>
+                        </details>
+
+                        <details class="group py-2 [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                                <h2 class="text-lg font-medium text-onPrimary">Mimos da loja</h2>
+
+                                <span class="relative size-5 shrink-0">
+                                    <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="#fff">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </span>
+                            </summary>
+
+                            <p class="mt-4 leading-relaxed text-onPrimary">
+                                Um Toque Especial da Renew para Clientes Conscientes.
+
+                                Em um mundo onde a sustentabilidade se torna cada vez mais importante, a nossa loja seu
+                                mostra seu compromisso com o meio ambiente através de mimos sustentáveis para nossos
+                                clientes. Esses pequenos gestos não só encantam os consumidores, mas também reforçam a
+                                imagem da marca como responsável e consciente.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-6 mb-9 sm:mb-14 lg:px-32 relative flex flex-col">
+            <h1 class="font-serif text-3xl text-onPrimary pb-4 sm:text-5xl sm:pb-6">Mais da nossa coleção</h1>
+
+            <ul id="carrosselCards"
+                class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory scrollbar-none md:hover:snap-x">
+                <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
+                    <a class="" href="./camisa1.html">
+                        <div lass="flex justify-center max-w-full pb-3">
+                            <img src="./assets/camisa-1.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
+                        </div>
+                        <div class="px-3 pb-6">
+                            <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
+                            <div class="flex gap-2 font-sans">
+                                <p class="text-lg">R$ 80,00</p>
+                                <span class="text-sm line-through text-onSurface">R$ 92,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
+                    <a class="" href="">
+                        <div class="flex justify-center max-w-full pb-3">
+                            <img src="./assets/camisa-2.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
+                        </div>
+                        <div class="px-3 pb-6">
+                            <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
+                            <div class="flex gap-2 font-sans">
+                                <p class="text-lg">R$ 100,00</p>
+                                <span class="text-sm line-through text-onSurface">R$ 122,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
+                    <a class="" href="">
+                        <div class="flex justify-center max-w-full pb-3">
+                            <img src="./assets/camisa-3.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
+                        </div>
+                        <div class="px-3 pb-6">
+                            <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
+                            <div class="flex gap-2 font-sans">
+                                <p class="text-lg">R$ 90,00</p>
+                                <span class="text-sm line-through text-onSurface">R$ 122,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
+                    <a class="" href="">
+                        <div class="flex justify-center max-w-full pb-3">
+                            <img src="./assets/camisa-4.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
+                        </div>
+                        <div class="px-3 pb-6">
+                            <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
+                            <div class="flex gap-2 font-sans">
+                                <p class="text-lg">R$ 80,00</p>
+                                <span class="text-sm line-through text-onSurface">R$ 92,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
+                    <a class="" href="">
+                        <div class="flex justify-center max-w-full pb-3">
+                            <img src="./assets/camisa-5.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
+                        </div>
+                        <div class="px-3 pb-6">
+                            <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
+                            <div class="flex gap-2 font-sans">
+                                <p class="text-lg">R$ 180,00</p>
+                                <span class="text-sm line-through text-onSurface">R$ 292,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
+                    <a class="" href="">
+                        <div class="flex justify-center max-w-full pb-3">
+                            <img src="./assets/camisa-6.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
+                        </div>
+                        <div class="px-3 pb-6">
+                            <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
+                            <div class="flex gap-2 font-sans">
+                                <p class="text-lg">R$ 80,00</p>
+                                <span class="text-sm line-through text-onSurface">R$ 92,00</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <button id="prevBtnCards" class="hidden lg:block py-4 z-10 absolute left-0 top-1/2 w-3 ml-14">
+                <img src="./assets/seta-esquerda.svg" alt="" srcset="">
+            </button>
+
+            <!-- Botão de Próximo -->
+            <button id="nextBtnCards" class="hidden lg:block py-4 z-10 absolute right-0 top-1/2 w-3 mr-14">
+                <img src="./assets/seta-direita.svg" alt="">
+            </button>
+
+            <a class="text-sm text-onPrimary underline underline-offset-4 text-right font-sans  sm:text-xl"
+                href="./colecao.html">Mostrar
+                mais</a>
+
+        </section>
+
+        <footer class="bg-segundaryContainer py-6 px-7 text-onPrimary">
+            <h2 class="font-serif text-3xl text-primaryContainer mt-4 mb-4 sm:text-5xl sm:mb-8 md:text-7xl md:mt-7">
+                Escolha
+                o
+                verde,
+                vista o
+                futuro 🌱
+            </h2>
+
+            <div class=" flex flex-col gap-4 sm:gap-6">
+                <div class="">
+                    <h3 class="font-sans font-medium text-2xl sm:text-3xl">Contato</h3>
+                    <a href="tel:+5561999998888" class="text-lg sm:text-xl">+55 61 99999-8888</a>
+                </div>
+
+                <div>
+                    <h3 class="font-sans font-medium text-2xl sm:text-3xl">Redes socias</h3>
+                    <div class="flex flex-col text-lg">
+                        <a href="#" class="font-sans text-lg sm:text-xl">Instagram</a>
+                        <a href="#" class="font-sans text-lg sm:text-xl">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/main.js" defer></script>
+
 </body>
-<main>
-    <section>
-        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none sm:h-96 lg:h-[620px] bg-fixed">
-            <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
-                <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw34c5529e/L1212_LDM_20.jpg?imwidth=615&impolicy=pctp"
-                    alt="" srcset="">
-            </div>
-            <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
-                <img class=""
-                    src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw811603c0/L1212_LDM_L1.jpg?imwidth=615&impolicy=pctp"
-                    alt="" srcset="">
-            </div>
-            <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
-                <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwb10f2a19/L1212_LDM_23.jpg?imwidth=765&impolicy=pctp"
-                    alt="" srcset="">
-            </div>
-            <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
-                <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dwa14c8ebf/L1212_LDM_21.jpg?imwidth=615&impolicy=pctp"
-                    alt="" srcset="">
-            </div>
-            <div class="carousel-item  text-onPrimary w-full h-[440px] shrink-0 snap-center">
-                <img src="https://imagesa1.lacoste.com/dw/image/v2/BCWL_PRD/on/demandware.static/-/Sites-master/default/dw96a74ac6/L1212_LDM_22.jpg?imwidth=615&impolicy=pctp"
-                    alt="" srcset="">
-            </div>
-        </div>
-    </section>
-
-    <section class="pt-8 relative mb-12">
-        <div
-            class="flex px-4 flex-col justify-center before:left-[40%] before:text-center before:absolute before:w-20 before:h-[3px] before:top-4 before:bg-segundaryContainer ">
-            <h2 class="text-onPrimary font-sans text-3xl font-bold pb-3">Camiseta RenwWModa</h2>
-
-            <div class="justify-items-start mb-6">
-                <span class="line-through text-surfaceContainerHigh text-xl">R$ 92,00</span>
-                <h3 class="font-sans text-onPrimary text-2xl">R$ 80,00</h3>
-            </div>
-
-            <div class="flex flex-col mb-4">
-                <h3 class="text-onPrimary text-2xl mb-2">Tamanho</h3>
-
-                <div class="flex gap-3">
-                    <button
-                        class=" py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer active:bg-primary active:text-onPrimary">PP</button>
-                    <button
-                        class=" py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer active:bg-primary active:text-onPrimary">P</button>
-                    <button
-                        class=" py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer active:bg-primary active:text-onPrimary">M</button>
-                    <button
-                        class=" py-2 px-3 rounded-md border-solid border-2  border-segundaryContainer text-segundaryContainer active:bg-primary active:text-onPrimary">G</button>
-
-                </div>
-            </div>
-
-            <div class="flex gap-3 bg-segundaryContainer mb-6 text-primaryContainer py-2 px-3 rounded-md">
-                <div class="justify-items-end min-w-9 ">
-                    <img class="w-6 h-auto" src="./assets/aviso.svg" alt="">
-                </div>
-                <p>Todas as nossas compras são finalizadas através do nosso WhatsApp, proporcionando uma proximidade
-                    única com nossos clientes desde o início até a conclusão da compra.</p>
-            </div>
-
-            <a class="group mb-6 relative justify-center inline-flex items-center overflow-hidden rounded bg-primary px-8 py-3 text-onPrimary focus:outline-none focus:ring active:bg-indigo-500"
-                href="./carrinho.html">
-                <span class="absolute -end-full transition-all group-hover:end-4">
-                    <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </span>
-
-                <span class="text-sm font-medium transition-all group-hover:me-4"> Adicionar ao carrinho </span>
-            </a>
-
-            <div class="flow-root">
-                <div class="-my-1 divide-y divide-">
-                    <details class="group py-2 [&_summary::-webkit-details-marker]:hidden" open>
-                        <summary class="flex cursor-pointer items-center justify-between text-gray-900">
-                            <h2 class="text-lg font-medium text-onPrimary">Detalhes dos produto</h2>
-
-                            <span class="relative size-5 shrink-0">
-                                <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </span>
-                        </summary>
-
-                        <p class="mt-4 leading-relaxed text-onPrimary">
-                            Produzida a partir de materiais 100% recicláveis, incluindo poliéster reciclado e
-                            algodão reciclado. Confortável, durável e suave ao toque, perfeito para o uso diário,
-                            mantendo o planeta em mente.
-
-                            Material: Mistura de poliéster reciclado e algodão reciclado.
-
-                            Sustentabilidade: Reduz o consumo de água e energia, com menor pegada de carbono.
-
-                            Estilo: Disponível em cores modernas e corte versátil, ideal para looks casuais e
-                            despojados.
-
-                            Benefício ambiental: Cada peça contribui para a redução do desperdício têxtil e o
-                            reaproveitamento de resíduos plásticos.
-
-                            Vista-se com propósito e ajude a cuidar do planeta, sem abrir mão do conforto e da
-                            qualidade!
-                        </p>
-                    </details>
-
-                    <details class="group py-2 [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="flex cursor-pointer items-center justify-between gap-1.5 text-onPrimary">
-                            <h2 class="text-lg font-medium ">Dimensões Aproximadas</h2>
-
-                            <span class="relative size-5 shrink-0">
-                                <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </span>
-                        </summary>
-
-                        <p class="mt-4 leading-relaxedflex text-onPrimary flex-col gap-1">
-                            <span>
-                                P: 69-69 x 49-51 cm (LxA). Recomendado para 162-170 de altura. (51kg - 62kg)
-                            </span>
-
-                            <span>
-                                M: 69-71 x 51-53 cm (LxA). Recomendado para 170-176 de altura. (62kg - 78kg)
-                            </span>
-
-                            <span>
-
-                                G: 71-73 x 53-55 cm (LxA). Recomendado para 176-182 de altura. (78kg - 83kg)
-                            </span>
-
-                            <span>
-                                GG: 73-75 x 55-57 cm (LxA). Recomendado para 182-190 de altura. (83kg - 90kg)
-                            </span>
-
-                            <span>
-                                As medidas apresentadas aqui podem oscilar em até 1,5 cm em sua largura e no seu
-                                comprimento.
-                            </span>
-                        </p>
-                    </details>
-
-                    <details class="group py-2 [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-                            <h2 class="text-lg font-medium text-onPrimary">Mimos da loja</h2>
-
-                            <span class="relative size-5 shrink-0">
-                                <svg class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#fff">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </span>
-                        </summary>
-
-                        <p class="mt-4 leading-relaxed text-onPrimary">
-                            Um Toque Especial da Renew para Clientes Conscientes.
-
-                            Em um mundo onde a sustentabilidade se torna cada vez mais importante, a nossa loja seu
-                            mostra seu compromisso com o meio ambiente através de mimos sustentáveis para nossos
-                            clientes. Esses pequenos gestos não só encantam os consumidores, mas também reforçam a
-                            imagem da marca como responsável e consciente.
-                        </p>
-                    </details>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="px-6 mb-9 sm:mb-14 lg:px-32 relative flex flex-col">
-        <h1 class="font-serif text-3xl text-onPrimary pb-4 sm:text-5xl sm:pb-6">Mais da nossa coleção</h1>
-
-        <ul id="carrosselCards"
-            class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory scrollbar-none md:hover:snap-x">
-            <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
-                <a class="" href="./camisa1.html">
-                    <div lass="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-1.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
-                    </div>
-                    <div class="px-3 pb-6">
-                        <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
-                        <div class="flex gap-2 font-sans">
-                            <p class="text-lg">R$ 80,00</p>
-                            <span class="text-sm line-through text-onSurface">R$ 92,00</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
-                <a class="" href="">
-                    <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-2.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
-                    </div>
-                    <div class="px-3 pb-6">
-                        <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
-                        <div class="flex gap-2 font-sans">
-                            <p class="text-lg">R$ 100,00</p>
-                            <span class="text-sm line-through text-onSurface">R$ 122,00</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
-                <a class="" href="">
-                    <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-3.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
-                    </div>
-                    <div class="px-3 pb-6">
-                        <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
-                        <div class="flex gap-2 font-sans">
-                            <p class="text-lg">R$ 90,00</p>
-                            <span class="text-sm line-through text-onSurface">R$ 122,00</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
-                <a class="" href="">
-                    <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-4.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
-                    </div>
-                    <div class="px-3 pb-6">
-                        <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
-                        <div class="flex gap-2 font-sans">
-                            <p class="text-lg">R$ 80,00</p>
-                            <span class="text-sm line-through text-onSurface">R$ 92,00</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
-                <a class="" href="">
-                    <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-5.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
-                    </div>
-                    <div class="px-3 pb-6">
-                        <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
-                        <div class="flex gap-2 font-sans">
-                            <p class="text-lg">R$ 180,00</p>
-                            <span class="text-sm line-through text-onSurface">R$ 292,00</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li class="bg-onPrimary rounded-md carousel-card min-w-60 snap-center sm:min-w-80">
-                <a class="" href="">
-                    <div class="flex justify-center max-w-full pb-3">
-                        <img src="./assets/camisa-6.png" class="sm:w-full" alt="camisa do deadpool preta" srcset="">
-                    </div>
-                    <div class="px-3 pb-6">
-                        <h2 class="font-serif text-onSegundary text-xl pb-4">Camisa Deadpool x Wolverine</h2>
-                        <div class="flex gap-2 font-sans">
-                            <p class="text-lg">R$ 80,00</p>
-                            <span class="text-sm line-through text-onSurface">R$ 92,00</span>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-
-        <button id="prevBtnCards" class="hidden lg:block py-4 z-10 absolute left-0 top-1/2 w-3 ml-14">
-            <img src="./assets/seta-esquerda.svg" alt="" srcset="">
-        </button>
-
-        <!-- Botão de Próximo -->
-        <button id="nextBtnCards" class="hidden lg:block py-4 z-10 absolute right-0 top-1/2 w-3 mr-14">
-            <img src="./assets/seta-direita.svg" alt="">
-        </button>
-
-        <a class="text-sm text-onPrimary underline underline-offset-4 text-right font-sans  sm:text-xl"
-            href="./colecao.html">Mostrar
-            mais</a>
-
-    </section>
-
-    <footer class="bg-segundaryContainer py-6 px-7 text-onPrimary">
-        <h2 class="font-serif text-3xl text-primaryContainer mt-4 mb-4 sm:text-5xl sm:mb-8 md:text-7xl md:mt-7">Escolha
-            o
-            verde,
-            vista o
-            futuro 🌱
-        </h2>
-
-        <div class=" flex flex-col gap-4 sm:gap-6">
-            <div class="">
-                <h3 class="font-sans font-medium text-2xl sm:text-3xl">Contato</h3>
-                <a href="tel:+5561999998888" class="text-lg sm:text-xl">+55 61 99999-8888</a>
-            </div>
-
-            <div>
-                <h3 class="font-sans font-medium text-2xl sm:text-3xl">Redes socias</h3>
-                <div class="flex flex-col text-lg">
-                    <a href="#" class="font-sans text-lg sm:text-xl">Instagram</a>
-                    <a href="#" class="font-sans text-lg sm:text-xl">WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</main>
 
 </html>
